@@ -9,15 +9,9 @@
 <body>
     <?php
         $number = rand(-10, 10);
+        $result = [1 => 'Positivo', 0 => 'Es cero', -1 => 'Negativo'];
         echo '<p>'.$number.'</p>';
-        if ($number > 0){
-            $result = 'Positivo';
-        }elseif ($number < 0){
-            $result = 'Negativo';
-        }else{
-            $result = 'Es cero';
-        }
-        echo '<p>'.$result.'</p>';
+        echo $result[$number <=> 0];
     ?>
 </body>
 </html>
