@@ -11,7 +11,7 @@
         $number = rand(-10, 10);
         $result = [1 => 'Positivo', 0 => 'Es cero', -1 => 'Negativo'];
         echo '<p>'.$number.'</p>';
-        echo $result[$number <=> 0];
+        echo '<p>'.$result[$number <=> 0].'</p>';
     ?>
 </body>
 </html>
