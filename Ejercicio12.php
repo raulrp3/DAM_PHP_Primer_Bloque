@@ -16,8 +16,7 @@
             }
             echo '</tr>';
             for($i = 1; $i <= 10; $i++){
-                echo '<tr>';
-                echo '<th>'.$i.'</th>';
+                echo '<tr><th>'.$i.'</th>';
                 for($j = 1; $j <= 10; $j++){
                     echo '<td>'.($i * $j).'</td>';
                 }
